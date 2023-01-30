@@ -47,4 +47,10 @@ class M_pinjam extends CI_Model
         $this->db->where('peminjaman.id_pinjam', $id);
         return $this->db->get()->row_array();
     }
+
+    public function cancel($id)
+    {
+        $this->db->where('id_pinjam', $id);
+        $this->db->delete('peminjaman');
+    }
 }

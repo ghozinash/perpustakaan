@@ -141,6 +141,11 @@ CREATE TRIGGER `jml_after_pinjam` AFTER INSERT ON `peminjaman` FOR EACH ROW UPDA
 $$
 DELIMITER ;
 
+DELIMITER $$
+CREATE TRIGGER `jml_after_cancel` AFTER DELETE ON `peminjaman` FOR EACH ROW UPDATE buku SET buku.jumlah = buku.jumlah + 1 WHERE buku.id_buku = old.id_buku
+$$
+DELIMITER ;
+
 -- --------------------------------------------------------
 
 --

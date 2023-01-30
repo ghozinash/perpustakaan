@@ -72,4 +72,13 @@ class Peminjaman extends CI_Controller
             redirect('peminjaman');
         }
     }
+
+    public function cancel($id)
+    {
+        $query = $this->m_pinjam->cancel($id);
+        if ($query = true) {
+            $this->session->set_flashdata('info', 'Peminjaman berhasil dibatalkan');
+            redirect('peminjaman');
+        }
+    }
 }

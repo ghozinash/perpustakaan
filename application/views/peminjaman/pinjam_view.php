@@ -45,6 +45,7 @@ if (!empty($this->session->flashdata('info'))) { ?>
                         <td><span class="label label-success"><?= $row->status; ?></span></td>
                         <td>
                             <a href="<?= base_url() ?>peminjaman/kembalikan/<?= $row->id_pinjam; ?>" class="btn btn-primary btn-xs <?= $row->status == 'Dikembalikan' ? 'disabled' : '' ?>" onclick="return confirm('Yakin buku dikembalikan?')"> Kembalikan</a>
+                            <a href="<?= base_url() ?>peminjaman/cancel/<?= $row->id_pinjam; ?>" class="btn btn-warning btn-xs <?= $row->status == 'Dikembalikan' ? 'disabled' : '' ?>" onclick="return confirm('Yakin dibatalkan?')"> Batal</a>
                         </td>
                     </tr>
                 <?php }
