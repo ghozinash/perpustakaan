@@ -49,3 +49,9 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+***************
+Contact
+***************
+
+Jika ada masalah pada program, hubungi mailto:ghozinash97@gmail.com
