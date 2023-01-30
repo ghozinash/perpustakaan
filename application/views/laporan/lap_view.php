@@ -53,6 +53,7 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                     <tr>
+                        <th>No.</th>
                         <th>ID Pinjam</th>
                         <th>Peminjam</th>
                         <th>Buku</th>
@@ -63,8 +64,10 @@
                 </thead>
                 <tbody>
                     <?php
+                    $no = 1;
                     foreach ($data as $row) { ?>
                         <tr>
+                            <td><?= $no++; ?></td>
                             <td><?= $row->id_pinjam; ?></td>
                             <td><?= $row->nama_anggota; ?></td>
                             <td><?= $row->judul_buku; ?></td>
