@@ -55,3 +55,4 @@ Contact
 ***************
 
 Jika ada masalah pada program, hubungi mailto:ghozinash97@gmail.com
+atau buat "new issue" pada page "issue".
